@@ -29,15 +29,9 @@ export default {
     }
   },
   mounted () {
-    console.log(Api)
     Api.images.map(image => {
       this.images.push(image)
     })
-    console.log(this.images)
-    // axios
-    //   .get('https://latelier.co/data/cats.json')
-    //   .then(response => (this.info = response))
-    //   console.log(this.info)
   }
 }
 </script>
