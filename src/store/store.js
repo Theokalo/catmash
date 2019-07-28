@@ -17,13 +17,13 @@ export default new Vuex.Store({
             state.images.find((vote, index) => {
               if (vote.id) {
                   if (vote.id === id) {
-                      let newCount = vote.count + 1
-                      let newVote = {
-                          url: vote.url,
-                          id: vote.id,
-                          count: newCount
-                      }
-                      Vue.set(state.images, index, newVote)
+                    let newCount = vote.count + 1
+                    let newVote = {
+                        url: vote.url,
+                        id: vote.id,
+                        count: newCount
+                    }
+                    Vue.set(state.images, index, newVote)
                   }
               }
             })
@@ -37,7 +37,6 @@ export default new Vuex.Store({
               count: 0
             }) 
           })
-          
         }
     }
 });

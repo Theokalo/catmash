@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="container">
-      <h2 align="center">Choose the cutest!!</h2>
+      <h2 align="center">CHOOSE THE CUTEST!!</h2>
        <pictures :images="images"/>
     </div>
   </div>
