@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse justify-content-md-center" id="navbar1">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <router-link class="nav-link" to="/">Home</router-link>
+          <router-link class="nav-link" to="/">Arena</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/allcats">All Cats</router-link>
+          <router-link class="nav-link" to="/ranking">Ranking</router-link>
         </li>
       </ul>
     </div>

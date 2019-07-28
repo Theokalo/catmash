@@ -2,14 +2,12 @@
   <div>
     <div class="container">
       <div class="row">
-      <div v-for='(image, index) in images' :key="index" class="col-sm-4">
+      <div v-for='(image, index) in totalVotes' :key="index" class="col-sm-4">
           <div class="img-container">
             <div class="img-style">
               <img :src="image.url" height="200" width="200" >
             </div>
-            <div>
-              <h3>Votes:</h3>
-            </div>
+                <h3>Votes: {{image.count}}</h3>
           </div>
       </div>
     </div>
@@ -19,19 +17,25 @@
 
 
 <script>
-import axios from 'axios'
-import Api from  '../cats.json'
+
 
 export default {
-    data () {
+  data () {
     return {
-      images : []
+      images: []
     }
   },
   mounted () {
-    Api.images.map(image => {
-      this.images.push(image)
-    })
+    // Api.images.map(image => {
+    //   //this.images.push(image)
+    //   // this.$store.commit('GET_IMAGES', image)
+    // })
+    console.log(this.$store.state.images)
+  },
+  computed: {
+    totalVotes () {
+      return this.$store.state.images
+    }
   }
 }
 </script>
