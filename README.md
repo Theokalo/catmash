@@ -2,6 +2,20 @@
 
 > A Vue.js project
 
+The goal is to create an application with two pages.
+<ul>
+<li><b>Arena page:</b> In this page you can vote the cutest cat between of two cats.</li>
+<li><b>Ranking page:</b> In this page you can see all the cats and how many votes has every cat.</li>
+</ul>
+To achieve the above I chose to develop a Vue.Js app. 
+<ul>
+<li>I created the NavBar in order to switch the pages.</li>
+<li>I created the store and I imported the api.</li>
+<li>To choose between two pictures I had to create a function that print two random pictures from the array by using a v-for in the template and these two pictures are not the same.</li>
+<li>Also, everytime that you pick a picture I update the store with the new count.</li>
+<li>Last but not least, I get all the images from the store and print them in the Ranking page with their values by using a v-for in the template.</li>
+</ul>
+
 ## Build Setup
 
 ``` bash
