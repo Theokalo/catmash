@@ -14,8 +14,7 @@ export default {
   components: {
     Pictures
   },
-  computed: {
-    // Checking the step 
+  computed: { 
     images () {
       return this.$store.state.images
     }
