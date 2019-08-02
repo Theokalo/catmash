@@ -18,14 +18,10 @@
 
 <script>
 export default {
-  data () {
-    return {
-      images: []
-    }
-  },
   computed: {
     totalVotes () {
-      return this.$store.state.images
+      let sortedArr = this.$store.state.images.sort((a, b) => Number(b.count) - Number(a.count))
+      return sortedArr
     }
   }
 }
@@ -34,10 +30,5 @@ export default {
 <style>
 .img-container{
   margin: 5px;
-}
-.img-style{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
 }
 </style>
