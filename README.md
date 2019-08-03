@@ -19,6 +19,10 @@ To achieve the above I chose to develop a Vue.Js app.
 <li>Last but not least, I get all the images from the store and print them in the Ranking page with their values by using a v-for in the template.</li>
 </ul>
 
+![Image 1](../master/src/asset/image1.png)
+![Image 2](../master/src/asset/image2.png)
+![Image 3](../master/src/asset/image3.png)
+
 ## Build Setup
 
 ``` bash
